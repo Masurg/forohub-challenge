@@ -1,0 +1,28 @@
+POST http://localhost:8080/topicos
+Content-Type: application/json
+
+{
+  "titulo": "Prueba final sin trabas",
+  "mensaje": "Validando la base de datos",
+  "autor": "Mauro",
+  "curso": "Spring Boot"
+}
+
+### Listar tópicos
+GET http://localhost:8080/topicos
+
+### Detalle de un tópico específico
+GET http://localhost:8080/topicos/1
+
+### Actualizar un tópico
+PUT http://localhost:8080/topicos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "titulo": "Título Editado",
+  "mensaje": "Este es el nuevo mensaje"
+}
+
+### Eliminar un tópico
+DELETE http://localhost:8080/topicos/1
